@@ -1,7 +1,39 @@
 easy-js-module
 ==============
 
-Sample code
+Easy JS Module is a lightweight system to load module for JavaScript application based on jQuery framework.
+
+HOW TO USE
+==============
+
+CONFIG FILE :
+--------------
+
+Config.json is the user defined config values.
+config.json is on the same level as index.html file.
+
+NAMESPACE : 
+The application's name. Name of the application and prefix module's filename.
+Ex : APP
+
+DIR_MODULES : 
+Directory of the application's modules.
+Ex : ./assets/js/modules/APP.sample.js
+
+DIR_CORE : 
+The core system's directory.
+Ex : ../../build/development/assets/js/core/easy-js-module.js
+
+DIR_APP : 
+The application file directory.
+Ex : ./assets/js/APP.js
+
+	{
+		"NAMESPACE":"APP",
+		"DIR_MODULES":"./assets/js/modules/",
+		"DIR_CORE":"../../build/development/assets/js/core/",
+		"DIR_APP":"./assets/js/"
+	}
 
 HTML :
 --------------
