@@ -37,7 +37,7 @@ var CONFIG;
 					_INSTANCES:{}
 			},
 			// MODULE MANAGEMENT
-			getDataController : function(){
+			executeDataController : function(){
 			
 				var _this = this;
 				var jsPath = "./"+this.getConfig("DIR_MODULES")+this.getConfig("NAMESPACE")+".";
@@ -52,7 +52,9 @@ var CONFIG;
 				
 					$(controller).each(function(i,ctrl){
 						modules[ctrl] = true;
-					})
+					});
+					
+					$el.removeAttr("data-controller");
 				});
 			
 				for( module in modules){
