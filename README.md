@@ -29,7 +29,7 @@ MODULE :
 
 	(function(_super, $){
 
-		_super.sample2 = function(){
+		_super.sample1 = function(){
 			alert("sample module 1");
 		}
 
