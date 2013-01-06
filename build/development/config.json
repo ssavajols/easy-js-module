@@ -1,0 +1,6 @@
+{
+	"NAMESPACE":"APP",
+	"DIR_MODULES":"assets/js/modules/",
+	"DIR_CORE":"assets/js/core/",
+	"DIR_APP":"assets/js/"
+}
