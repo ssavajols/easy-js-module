@@ -5,18 +5,18 @@ Sample code
 
 HTML :
 --------------
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>EASY-JS-MODULE</title>
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-			<script type="text/javascript" src="../../build/development/assets/vendor/jquery/jquery-1.8.3.min.js"></script>
-			<script type="text/javascript" src="../../build/development/assets/js/core/easy-js-module.js"></script>
-		</head>
-		<body>
-			<div data-controller="sample1">sample module 1</div>
-		</body>
-	</html>
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+		&lt;head&gt;
+			&lt;title&gt;EASY-JS-MODULE&lt;/title&gt;
+			&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+			&lt;script type=&quot;text/javascript&quot; src=&quot;../../build/development/assets/vendor/jquery/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+			&lt;script type=&quot;text/javascript&quot; src=&quot;../../build/development/assets/js/core/easy-js-module.js&quot;&gt;&lt;/script&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;div data-controller=&quot;sample1&quot;&gt;sample module 1&lt;/div&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
 
 APP FILE :
 --------------
