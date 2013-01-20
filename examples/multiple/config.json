@@ -2,5 +2,6 @@
 	"NAMESPACE":"APP",
 	"DIR_MODULES":"./assets/js/modules/",
 	"DIR_CORE":"../../build/development/assets/js/core/",
-	"DIR_APP":"./assets/js/"
+	"DIR_APP":"./assets/js/",
+	"DEBUG":"true"
 }
