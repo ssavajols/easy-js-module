@@ -28,11 +28,16 @@ DIR_APP :
 The application file directory.
 Ex : ./assets/js/APP.js
 
+DEBUG : 
+Enable debug mode to display which modules loaded in text message console.
+This could help to add some debug messages into your app. Get the parameter by calling APP.getConfig("DEBUG")
+
 	{
 		"NAMESPACE":"APP",
 		"DIR_MODULES":"./assets/js/modules/",
 		"DIR_CORE":"../../build/development/assets/js/core/",
-		"DIR_APP":"./assets/js/"
+		"DIR_APP":"./assets/js/",
+		"DEBUG":"false"
 	}
 
 HTML :
