@@ -9,7 +9,8 @@ define(['jquery'], function($) {
         var config = {
             debug: true,
             paths: {
-                module: "modules/",
+                module: "module/",
+                controller: "controller/",
                 helper: "helper/"
             }
         };
@@ -50,7 +51,7 @@ define(['jquery'], function($) {
             getDataController: function() {
 
                 var _this = this;
-                var path = _this.get_path('module');
+                var path = _this.get_path('controller');
                 var debug = _this.get_config('debug');
 
                 $('[data-controller]').each(function(i) {
@@ -60,13 +61,13 @@ define(['jquery'], function($) {
                     $(modules).each(function(i, module_name) {
                         if (module_name !== '') {
                             require([path + module_name], function(module) {
+                                if (debug) {
+                                    console.log('load module :: ' + path + module_name);
+                                }
                                 if (!module.initialize && debug) {
                                     throw(path + module_name + " has no method initialize !");
                                 } else if (module.initialize) {
                                     module.initialize();
-                                    if (debug) {
-                                        console.log('load module :: ' + path + module_name);
-                                    }
                                 }
                             });
                         }
